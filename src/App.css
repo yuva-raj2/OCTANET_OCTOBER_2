@@ -1,38 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  margin-left: 15rem;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: black;
+  color: wheat;
+  width:50%;
+  height: 90vh;
+}
+.Home{
+  background-color:lightslategrey;
+}
+.Home span{
+  color:mediumvioletred;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.Todo ul{
+  margin-top: 5rem;
+  list-style-type: none;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Todo li{
+  background-color: darkslategrey;
+  margin:0.25rem 0rem;
+  font-size: 25px;
+  width: 100%;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+.Todo ul li:hover{
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.check{
+  width: 100px;
+  height: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.check:focus{
+  text-decoration: underline;
+}
+.button{
+  text-align: justify;
+  font-size: 25px;
+  color: ghostwhite;
+  cursor:pointer;
+  margin-left: 5rem;
+}
+.button:hover{
+  color: red;
+  outline: none;
+}
+.itemlength{
+  background-color: lightblue;
+  color: darkorange;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 17rem;
+  font-weight: bolder;
+}
+.addForm{
+  margin-top: 2rem;
+}
+.addForm label{
+  font-size: 25px;
+  margin-right: 2rem;
+}
+#addItem{
+  padding: 0.2rem;
+}
+.addForm button:hover{
+  background-color:chartreuse;
+}
+.addForm button:active{
+  background-color: green;
+}
+.addForm button:visited{
+  background-color: blue;
 }
